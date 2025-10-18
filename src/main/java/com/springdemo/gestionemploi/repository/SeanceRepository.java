@@ -16,7 +16,6 @@ public interface SeanceRepository extends JpaRepository<Seance, Integer> {
     List<Seance> findBySalleId(Long salleId);
     List<Seance> findByHeureDebutBetween(LocalDateTime start, LocalDateTime end);
 
-    //List<Seance> findByProfesseurIdandJour(Long groupeId, LocalDate jour);
 
     List<Seance> findBySalleIdAndJourAndHeureDebutBeforeAndHeureFinAfter(
             Long salleId, LocalDate jour, LocalTime heureFin, LocalTime heureDebut);
