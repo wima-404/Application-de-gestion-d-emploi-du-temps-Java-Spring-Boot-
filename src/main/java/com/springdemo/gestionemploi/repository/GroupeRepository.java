@@ -10,5 +10,5 @@ import java.util.Optional;
 public interface GroupeRepository extends JpaRepository<Groupe, Long> {
 
     Optional<Groupe> findByNom(String nom);
-    Boolean existsByNom(String nom);
+    //Boolean existsByNom(String nom);
 }

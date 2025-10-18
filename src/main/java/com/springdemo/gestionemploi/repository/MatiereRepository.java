@@ -10,5 +10,5 @@ import java.util.Optional;
 public interface MatiereRepository extends JpaRepository<Matiere, Integer> {
 
     Optional<Matiere> findByNom(String nom);
-    Boolean existsByNom(String nom);
+    //Boolean existsByNom(String nom);
 }
