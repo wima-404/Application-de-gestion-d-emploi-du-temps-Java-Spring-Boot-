@@ -7,7 +7,7 @@ import lombok.Data;
 
 
 @Data
-public class UderDto {
+public class UserDto {
     private Long id;
     @NotBlank(message = "Le nom ne peut pas être vide")
     private String nom;

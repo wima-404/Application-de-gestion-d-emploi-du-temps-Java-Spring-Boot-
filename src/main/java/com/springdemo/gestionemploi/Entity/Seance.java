@@ -27,6 +27,8 @@ public class Seance {
     @Column(nullable = false)
     private LocalTime heureFin;
 
+    private String typeSeance;
+
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "matiere_id", nullable = false)
     private Matiere matiere;
@@ -38,6 +40,10 @@ public class Seance {
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "groupe_id",nullable = false)
     private Groupe groupe;
+
+    @ManyToOne
+    @JoinColumn(name = "salle_id", nullable = false)
+    private Salle salle;
 
 
 }

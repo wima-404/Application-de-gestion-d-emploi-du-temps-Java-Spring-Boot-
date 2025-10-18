@@ -25,4 +25,8 @@ public class Groupe {
     @OneToMany(mappedBy = "groupe", cascade = CascadeType.ALL,orphanRemoval = true)
     private List<Etudiant> etudiants;
 
+
+    // @OneToMany(mappedBy = "groupe", cascade = CascadeType.ALL, fetch = FetchType.LAZY)
+    // private List<Seance> seances;
+
 }

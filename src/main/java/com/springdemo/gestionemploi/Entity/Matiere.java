@@ -16,4 +16,8 @@ public class Matiere {
 
     @Column(unique=true, nullable=false)
     private String nom;
+
+
+    // @OneToMany(mappedBy = "matiere", fetch = FetchType.LAZY, cascade = CascadeType.ALL)
+    // private List<Seance> seances;
 }
